@@ -1,0 +1,288 @@
+/* ===========================
+   RESET & BASE STYLE
+============================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #b7bfc7; /* Warna background halaman - ganti sesuai selera */
+  color: #000000; /* Warna teks utama */
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===========================
+   SIDEBAR NAVIGASI
+============================== */
+.sidebar-nav {
+  position: fixed;
+  width: 220px; /* Lebar sidebar, bisa diubah */
+  height: 100vh;
+  background: #1e2a38; /* Warna background sidebar - ganti disini */
+  padding-top: 40px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin: 15px 0;
+}
+
+.sidebar-nav a {
+  color: #ddd; /* Warna teks menu sidebar */
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar-nav a i {
+  margin-right: 12px;
+  font-size: 1.2rem;
+  width: 20px;
+  text-align: center;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  background: #2c3e50; /* Warna background saat hover di menu */
+  border-left-color: #e74c3c; /* Warna garis kiri saat aktif */
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ===========================
+   MAIN CONTENT
+============================== */
+main {
+  margin-left: 220px; /* Lebar sidebar harus sama dengan sidebar-nav */
+  padding: 40px 40px 80px 40px;
+  max-width: 900px; /* Maksimal lebar konten */
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+/* ===========================
+   BAGIAN PROFILE
+============================== */
+.profile-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.profile-image-container {
+  flex-shrink: 0;
+  text-align: center;
+  width: 220px;
+}
+
+.profile-image {
+  width: 200px; /* Ukuran foto profil, bisa diubah */
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%; /* Buat lingkaran */
+  border: 5px solid #4e0e06; /* Warna border foto profil */
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+.profile-contact {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.profile-contact p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-contact i {
+  color: #000000; /* Warna icon kontak */
+}
+
+/* ===========================
+   SOCIAL LINKS
+============================== */
+.social-links {
+  margin: 15px 0;
+}
+
+.social-links a.social-icon {
+  font-size: 1.6rem;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-links a.github {
+  color: #333;
+}
+
+.social-links a.github:hover {
+  color: #6cc644;
+}
+
+.social-links a.linkedin {
+  color: #0a66c2;
+}
+
+.social-links a.linkedin:hover {
+  color: #004182;
+}
+
+/* ===========================
+   PROFILE INFO (NAMA, DESKRIPSI)
+============================== */
+.profile-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.profile-info h1 {
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  color: #1e2a38; /* Warna teks nama */
+}
+
+.profile-info p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* ===========================
+   SKILLS
+============================== */
+.skills-container h3 {
+  margin-bottom: 12px;
+  color: #1e2a38;
+  font-weight: 700;
+}
+
+.skills-grid span {
+  display: inline-block;
+  background: #f1c40f; /* Warna badge skill */
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  margin: 5px 8px 5px 0;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(241, 196, 15, 0.4);
+  transition: background 0.3s ease;
+  cursor: default;
+}
+
+.skills-grid span:hover {
+  background: #d4ac0d;
+}
+
+/* ===========================
+   TOMBOL DOWNLOAD CV
+============================== */
+.cv-download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #e74c3c; /* Warna tombol CV */
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 700;
+  box-shadow: 0 6px 12px rgba(231, 76, 60, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.cv-download-btn:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+}
+
+/* ===========================
+   JUDUL BAGIAN LAIN
+============================== */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border-bottom: 3px solid #201653; /* Garis bawah judul */
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #1e2a38;
+}
+
+/* ===========================
+   FOOTER
+============================== */
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background: #ecf0f1; /* Warna background footer */
+  color: #555;
+  font-size: 0.95rem;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/* ===========================
+   RESPONSIVE (untuk layar kecil)
+============================== */
+@media (max-width: 768px) {
+  .sidebar-nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .sidebar-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .sidebar-nav li {
+    margin: 0;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-info {
+    text-align: center;
+  }
+}
