@@ -1,0 +1,29 @@
+{
+    "name": "Fahreza Aldryan Maualana",
+    "description": "As a student at Semarang State Polytechnic, I am dedicated to the development and assembly of appropriate technology, specifically microcontroller-based systems, and the practical implementation of sensors in industrial applications. I have a proven track record in building IoT solutions and integrating various other sensors. My core skills lie in programming with Python and C, and I am proficient in IoT project creation. Concurrently, I am employed part-time as kitchen staff at a cafe.",
+    "profileImage": "images/Fahreza Aldryan Maulana 3.32.22.1.07.JPG",
+    "email": "fahrezaldryan@gmail.com",
+    "phone": "+62 (896) 4661-0505",
+    "socialMedia": [
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/rayennn270"
+        },
+        {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/raynnrlm_?igsh=MWh1cmVlamc4emppbw%3D%3D&utm_source=qr"
+        }
+    ],
+    "cv": {
+			"text": "Download CV",
+			"file": "files/Fahreza Aldryan Maulana CV.pdf",
+			"icon": "fas fa-file-pdf"
+	},
+    "skills": [
+        {"name": "Internet Of Things", "icon": "fas fa-heart-pulse", "level": 90},
+        {"name": "Front-end IC Design", "icon": "fas fa-microchip", "level": 70},
+        {"name": "Web Programming", "icon": "fab fa-js", "level": 85},
+	{"name": "Project Management", "icon": "fas fa-list-check", "level": 95},
+	{"name": "Foreign Languages", "icon": "fas fa-language", "level": 85}
+    ]
+}

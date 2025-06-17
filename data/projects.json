@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Tempat Sampah Pintar Menggunakan YOLOV5",
+        "year": "2024",
+        "partner": "CV SiRobo",
+        "role": "Programmer Software",
+        "description": "Develop smart trash bin using YOLOV5 to detection the object for classification",
+        "image": "images/Smart_Trash_Bin_Flowchart.png",
+    },
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "company": "Politeknik Negeri Semarang",
+		"logo":"images/polines-logo.png",
+        "position": "Collage Student Of Electronic Engineering",
+        "year": "2022 - Present",
+        "description": "As a student at Semarang State Polytechnic, I am dedicated to the development and assembly of appropriate technology, specifically microcontroller-based systems, and the practical implementation of sensors in industrial applications."
+    },
+	{
+        "company": "CV SiRobo",
+		"logo":"images/CV SIROBO.jpg",
+        "position": "Intership",
+        "year": "September - Desember 2024",
+        "description": "Praktik kerja lapangan di CV SiRobo yang bergerak dibidang robotik dan mikrokontroler.Pada magang tersebut kita mengerjakan sebuah projet yang berjudul Tempat Sampah Pintar Menggunakan YOLOV5"
+    },
+]
