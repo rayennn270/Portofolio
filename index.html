@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Portofolio</title> <!-- Ubah judul halaman di sini -->
+    <link rel="icon" href="images/favicon.ico" /> <!-- Ganti favicon jika ingin -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" /> <!-- CSS utama -->
+  </head>
+  <body>
+    <header>
+      <!-- Sidebar Navigasi -->
+      <nav class="sidebar-nav">
+        <ul>
+          <!-- Ubah teks menu dan icon di sini -->
+          <li><a href="#profile" class="active"><i class="fas fa-user"></i> Profile</a></li>
+          <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+          <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Bagian Profile -->
+      <section id="profile" class="section">
+        <div class="container profile-content">
+          <div class="profile-image-container">
+            <!-- Ganti gambar profile di sini -->
+            <img
+              id="profile-pic"
+              src="C:\Users\INFINIX\Downloads\Portofolio\Portofolio\Fahreza Aldryan Maulana 3.32.22.1.07.JPG"
+              alt="Fahreza Aldryan"
+              class="profile-image"
+            />
+            <div class="profile-contact">
+              <!-- Ubah email dan nomor telepon -->
+              <p><i class="fas fa-envelope"></i> fahrezaldryan@gmail.com</p>
+              <p><i class="fas fa-phone"></i> +62 896-4661-0505</p>
+              <div class="social-links" id="social-links">
+                <!-- Ganti atau tambah link sosial media -->
+                <a
+                  href="https://github.com/rayennn270"
+                  target="_blank"
+                  title="GitHub"
+                  class="social-icon github"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/raynnrlm_?igsh=MWh1cmVlamc4emppbw%3D%3D&utm_source=qr"
+                  target="_blank"
+                  title="instagram"
+                  class="social-icon instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+
+              <!-- Link download CV, ganti nama file dan path jika perlu -->
+              <a
+                href="C:\Users\INFINIX\Downloads\Portofolio\Portofolio\files\Fahreza Aldryan Maulana CV.pdf"
+                class="cv-download-btn"
+                download
+                title="Download CV"
+                ><i class="fas fa-file-pdf"></i> Download CV</a
+              >
+            </div>
+          </div>
+
+          <div class="profile-info">
+            <!-- Ganti nama dan deskripsi profil -->
+            <h1 id="profile-name">Fahreza Aldryan Maulana</h1>
+            <p id="profile-description"> As a student at Semarang State Polytechnic, I am dedicated to the development and assembly of appropriate technology, specifically microcontroller-based systems, and the practical implementation of sensors in industrial applications. I have a proven track record in building IoT solutions and integrating various other sensors. My core skills lie in programming with Python and C, and I am proficient in IoT project creation. Concurrently, I am employed part-time as kitchen staff at a cafe.
+            </p>
+
+            <div class="skills-container">
+              <h3>Skills</h3>
+              <div class="skills-grid" id="skills-grid">
+                <!-- Tambah / ubah skills yang ingin ditampilkan -->
+                <span>Internet Of Things</span>
+                <span>Multilanguage</span>
+                <span>programming</span>
+                <span>PLC</span>
+                <span>Pneumatic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian Education -->
+      <section id="education" class="section">
+        <div class="container">
+          <h2>Education</h2>
+          <div class="education-list" id="education-list">
+            <!-- Ubah info pendidikan -->
+            <p><strong>Politeknik Negeri Semarang</strong> - Teknik Elektro</p>
+            <p>Mahasiswa D3 Teknik Elektronika yang mempelajari mengenai Instrumentasi, Sensor - Sensor, Internet Of Things, dan Pneumatic</p>
+            <p>2022 - Present</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian Experience -->
+      <section id="experience" class="section">
+        <div class="container">
+          <h2>Work Experience</h2>
+          <div class="experience-list" id="experience-list">
+            <!-- Ubah pengalaman kerja -->
+            <p><strong>Kuliah Kerja Lapangan</strong></p>
+            <p>Praktik kerja lapangan di CV SiRobo yang bergerak dibidang robotik dan mikrokontroler.Pada magang tersebut kita mengerjakan sebuah projet yang berjudul "Tempat Sampah Pintar Menggunakan YOLOV5"</p>
+            <p>September 2024 - Desember 2024</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-grid" id="projects-grid">
+            <!-- Ubah daftar projek -->
+            <ul>
+              <li>Merancang dan merakit Project Magang "Tempat Sampah Pintar Menggunakan YOLOV5"</li>
+              <li>Merancang dan merakit Projet "Sistem Keamanan Pada Object di Museum"</li>
+              <li>Merancang dan merakit Project "Sistem Hidroponik Pintar Menggunakan Sensor Turbidity dan DHT11"</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="current-year"></span> Fahreza Aldryan Portfolio</p>
+      <!-- Ubah teks copyright di sini -->
+    </footer>
+
+    <script>
+      // Script untuk update tahun otomatis di footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+
+      // Script untuk highlight menu sidebar saat scroll
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.sidebar-nav a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 60;
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
